@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
-val copyWith = {
+val copyWithSpanner = {
     /* basic items */
     "minecraft:jukebox": 3,
     "minecraft:tnt": 3,
@@ -28,6 +28,6 @@ for key, value in copyWith {
          .setCopy(
             Copy.byName(key)
         )
-        .addTool(<ore:artisansChisel>, value)
+        .addTool(<ore:artisansSpanner>, value)
         .create();
 }
