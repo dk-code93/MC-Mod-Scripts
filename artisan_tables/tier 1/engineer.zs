@@ -24,11 +24,15 @@ val copyWithSpanner = {
     "quark:redstone_randomizer": 3,
     "quark:rain_detector": 3,
     "quark:redstone_inductor": 3,
+    "charm:variable_redstone_lamp": 3,
     "sereneseasons:season_sensor_spring": 3,
     /* pams machines */
     "harvestcraft:waterfilter": 3,
     "harvestcraft:grinder": 3,
     "harvestcraft:presser": 3,
+    /* bird crap */
+    "exoticbirds:egg_sorter": 3,
+    "exoticbirds:egg_incubator": 3,
 } as int[string];
 
 for key, value in copyWith {
