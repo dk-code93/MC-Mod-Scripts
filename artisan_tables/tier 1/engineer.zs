@@ -21,6 +21,10 @@ val copyWithSpanner = {
     "natura:common/daylight_detector": 3,
     "quark:repeater": 3,
     "quark:dispenser": 3,
+    /* pams machines */
+    "harvestcraft:waterfilter": 3,
+    "harvestcraft:grinder": 3,
+    "harvestcraft:presser": 3,
 } as int[string];
 
 for key, value in copyWith {
