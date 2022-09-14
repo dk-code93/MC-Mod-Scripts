@@ -4,6 +4,18 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val justCopy = [
+    "charm:redstone_sand"
+] as string[];
+
+for value in justCopy {
+    RecipeBuilder.get("engineer")
+         .setCopy(
+            Copy.byName(value)
+        )
+        .create();
+}
+
 val copyWithSpanner = {
     /* basic items */
     "minecraft:jukebox": 3,
