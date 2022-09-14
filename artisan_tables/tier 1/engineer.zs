@@ -47,7 +47,7 @@ val copyWithSpanner = {
     "exoticbirds:egg_incubator": 3,
 } as int[string];
 
-for key, value in copyWith {
+for key, value in copyWithSpanner {
     RecipeBuilder.get("engineer")
          .setCopy(
             Copy.byName(key)
