@@ -21,6 +21,10 @@ val copyWithSpanner = {
     "natura:common/daylight_detector": 3,
     "quark:repeater": 3,
     "quark:dispenser": 3,
+    "quark:redstone_randomizer": 3,
+    "quark:rain_detector": 3,
+    "quark:redstone_inductor": 3,
+    "sereneseasons:season_sensor_spring": 3,
     /* pams machines */
     "harvestcraft:waterfilter": 3,
     "harvestcraft:grinder": 3,
