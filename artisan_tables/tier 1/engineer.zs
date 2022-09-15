@@ -63,6 +63,14 @@ val copyWithSolderer = {
     "charm:variable_redstone_lamp": 3,
     "sereneseasons:season_sensor_spring": 3,
     "minecraft:daylight_detector": 3,
+    "minecraft:hopper": 3,
+    "quark:hopper": 3,
+    /* rails and minecarts */
+    "minecraft:minecart": 3,
+    "minecraft:rail": 3,
+    "minecraft:golden_rail": 3,
+    "minecraft:detector_rail": 3,
+    "minecraft:activator_rail": 3,
 } as int[string];
 
 for key, value in copyWithSolderer {

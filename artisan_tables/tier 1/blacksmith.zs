@@ -6,6 +6,8 @@ import crafttweaker.oredict.IOreDict;
 
 #Copying vanilla recipes
 val copyWithHammer = {
+    /* misc metal items */
+    "minecraft:bucket": 4,
     /* armor */
     "minecraft:iron_chestplate": 4,
     "minecraft:iron_leggings": 4,
