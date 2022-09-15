@@ -108,12 +108,12 @@ val copyWithHammer = {
     "artisanworktables:recipe.artisans_hatchet.copper": 4,
     "artisanworktables:recipe.artisans_file.copper": 4,
     "artisanworktables:recipe.artisans_solderer.copper": 4,
- } as string[];
+ } as int[string];
 
-for recipe in copyWithHammer {
+for key, value in copyWithHammer {
     RecipeBuilder.get("blacksmith")
         .setCopy(
-            Copy.byName(recipe)
+            Copy.byName(key)
         )
         .addTool(<ore:artisansHammer>, value)
         .create();
