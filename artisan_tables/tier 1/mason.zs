@@ -172,7 +172,7 @@ val copyWithSaw = {
  } as int[string];
 
 for key, value in copyWithSaw {
-    RecipeBuilder.get("carpenter")
+    RecipeBuilder.get("mason")
          .setCopy(
             Copy.byName(key)
         )
@@ -252,7 +252,7 @@ val copyWithTrowel = {
 } as int[string];
 
 for key, value in copyWithTrowel {
-    RecipeBuilder.get("carpenter")
+    RecipeBuilder.get("mason")
          .setCopy(
             Copy.byName(key)
         )
@@ -275,7 +275,7 @@ val copyWithChisel = {
 } as int[string];
 
 for key, value in copyWithTrowel {
-    RecipeBuilder.get("carpenter")
+    RecipeBuilder.get("mason")
          .setCopy(
             Copy.byName(key)
         )
