@@ -22,6 +22,7 @@ val copyWithSpanner = {
     "minecraft:tnt": 3,
     /* redstone items */
     "minecraft:repeater": 3,
+    "minecraft:noteblock": 3,
     "minecraft:comparator": 3,
     "minecraft:redstone_lamp": 3,
     "minecraft:tripwire_hook": 3,
