@@ -71,6 +71,10 @@ val copyWithSolderer = {
     "minecraft:golden_rail": 3,
     "minecraft:detector_rail": 3,
     "minecraft:activator_rail": 3,
+    "quark:hopper_minecart": 3,
+    "quark:furnace_minecart": 3,
+    "quark:tnt_minecart": 3,
+    "quark:chest_minecart": 3,
 } as int[string];
 
 for key, value in copyWithSolderer {
