@@ -31,6 +31,7 @@ val copyWithSpanner = {
     "minecraft:dispenser": 3,
     "minecraft:observer": 3,
     "minecraft:piston": 3,
+    "quark:dispenser": 3,
     /* pams machines */
     "harvestcraft:waterfilter": 3,
     "harvestcraft:grinder": 3,
@@ -44,6 +45,7 @@ for key, value in copyWithSpanner {
     RecipeBuilder.get("engineer")
          .setCopy(
             Copy.byName(key)
+            .replaceInput(<minecraft:iron_ingot>, <ore:ingotCopper>)
         )
         .addTool(<ore:artisansSpanner>, value)
         .create();
@@ -54,7 +56,6 @@ val copyWithSolderer = {
     "minecraft:repeater": 3,
     "minecraft:comparator": 3,
     "quark:repeater": 3,
-    "quark:dispenser": 3,
     "quark:redstone_randomizer": 3,
     "natura:common/daylight_detector": 3,
     "quark:rain_detector": 3,
