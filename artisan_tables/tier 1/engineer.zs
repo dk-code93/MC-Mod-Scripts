@@ -19,26 +19,26 @@ for value in justCopy {
 
 val copyWithSpanner = {
     /* basic items */
-    "minecraft:jukebox": 3,
-    "minecraft:tnt": 3,
-    "minecraft:compass": 3,
-    "minecraft:clock": 3,
-    "simpledifficulty:thermometer": 3,
+    "minecraft:jukebox": 15,
+    "minecraft:tnt": 5,
+    "minecraft:compass": 15,
+    "minecraft:clock": 15,
+    "simpledifficulty:thermometer": 15,
     /* redstone items */
-    "minecraft:noteblock": 3,
-    "minecraft:redstone_lamp": 3,
-    "minecraft:dropper": 3,
-    "minecraft:dispenser": 3,
-    "minecraft:observer": 3,
-    "minecraft:piston": 3,
-    "quark:dispenser": 3,
+    "minecraft:noteblock": 15,
+    "minecraft:redstone_lamp": 15,
+    "minecraft:dropper": 15,
+    "minecraft:dispenser": 15,
+    "minecraft:observer": 15,
+    "minecraft:piston": 15,
+    "quark:dispenser": 15,
     /* pams machines */
-    "harvestcraft:waterfilter": 3,
-    "harvestcraft:grinder": 3,
-    "harvestcraft:presser": 3,
+    "harvestcraft:waterfilter": 20,
+    "harvestcraft:grinder": 20,
+    "harvestcraft:presser": 20,
     /* bird crap */
-    "exoticbirds:egg_sorter": 3,
-    "exoticbirds:egg_incubator": 3,
+    "exoticbirds:egg_sorter": 20,
+    "exoticbirds:egg_incubator": 20,
 } as int[string];
 
 for key, value in copyWithSpanner {
@@ -53,28 +53,28 @@ for key, value in copyWithSpanner {
 
 val copyWithSolderer = {
     /* redstone items */
-    "minecraft:repeater": 3,
-    "minecraft:comparator": 3,
-    "quark:repeater": 3,
-    "quark:redstone_randomizer": 3,
-    "natura:common/daylight_detector": 3,
-    "quark:rain_detector": 3,
-    "quark:redstone_inductor": 3,
-    "charm:variable_redstone_lamp": 3,
-    "sereneseasons:season_sensor_spring": 3,
-    "minecraft:daylight_detector": 3,
-    "minecraft:hopper": 3,
-    "quark:hopper": 3,
+    "minecraft:repeater": 10,
+    "minecraft:comparator": 10,
+    "quark:repeater": 10,
+    "quark:redstone_randomizer": 10,
+    "natura:common/daylight_detector": 10,
+    "quark:rain_detector": 10,
+    "quark:redstone_inductor": 10,
+    "charm:variable_redstone_lamp": 10,
+    "sereneseasons:season_sensor_spring": 10,
+    "minecraft:daylight_detector": 10,
+    "minecraft:hopper": 10,
+    "quark:hopper": 10,
     /* rails and minecarts */
-    "minecraft:minecart": 3,
-    "minecraft:rail": 3,
-    "minecraft:golden_rail": 3,
-    "minecraft:detector_rail": 3,
-    "minecraft:activator_rail": 3,
-    "quark:hopper_minecart": 3,
-    "quark:furnace_minecart": 3,
-    "quark:tnt_minecart": 3,
-    "quark:chest_minecart": 3,
+    "minecraft:minecart": 10,
+    "minecraft:rail": 10,
+    "minecraft:golden_rail": 10,
+    "minecraft:detector_rail": 10,
+    "minecraft:activator_rail": 10,
+    "quark:hopper_minecart": 10,
+    "quark:furnace_minecart": 10,
+    "quark:tnt_minecart": 10,
+    "quark:chest_minecart": 10,
 } as int[string];
 
 for key, value in copyWithSolderer {
