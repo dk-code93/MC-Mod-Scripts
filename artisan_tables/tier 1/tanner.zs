@@ -17,6 +17,10 @@ val copyWithNeedle = {
     "harvestcraft:hardenedleatherchestitem": 20,
     "harvestcraft:hardenedleatherleggingsitem": 20,
     "harvestcraft:hardenedleatherbootsitem": 20,
+    "natura:tools/entities/imp_leather_helmet": 20,
+    "natura:tools/entities/imp_leather_leggings": 20,
+    "natura:tools/entities/imp_leather_boots": 20,
+    "natura:tools/entities/imp_leather_chestplate": 20,
     /* backpacks */
     "improvedbackpacks:item.bound_leather": 10,
     "improvedbackpacks:item.backpack": 35,
