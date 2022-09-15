@@ -8,6 +8,9 @@ import crafttweaker.oredict.IOreDict;
 val copyWithHammer = {
     /* misc metal items */
     "minecraft:bucket": 15,
+    "charm:gold_lantern": 7,
+    "futuremc:else/lantern": 7,
+    "futuremc:else/soul_lantern": 7,
     /* armor */
     "minecraft:iron_chestplate": 30,
     "minecraft:iron_leggings": 30,
