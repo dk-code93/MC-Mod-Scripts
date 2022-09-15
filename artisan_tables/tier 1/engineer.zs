@@ -5,7 +5,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
 val justCopy = [
-    "charm:redstone_sand"
+    "charm:redstone_sand",
+    "minecraft:tripwire_hook",
 ] as string[];
 
 for value in justCopy {
@@ -26,7 +27,6 @@ val copyWithSpanner = {
     /* redstone items */
     "minecraft:noteblock": 3,
     "minecraft:redstone_lamp": 3,
-    "minecraft:tripwire_hook": 3,
     "minecraft:dropper": 3,
     "minecraft:dispenser": 3,
     "minecraft:observer": 3,
@@ -50,6 +50,7 @@ for key, value in copyWithSpanner {
 }
 
 val copyWithSolderer = {
+    /* redstone items */
     "minecraft:repeater": 3,
     "minecraft:comparator": 3,
     "quark:repeater": 3,
