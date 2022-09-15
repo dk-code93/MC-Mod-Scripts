@@ -13,6 +13,10 @@ val copyWithNeedle = {
     "ancientbeasts:scale_armor": 20,
     "ancientbeasts:scale_hood": 20,
     "ancientbeasts:charred_cloak": 20,
+    "harvestcraft:hardenedleatherhelmitem": 20,
+    "harvestcraft:hardenedleatherchestitem": 20,
+    "harvestcraft:hardenedleatherleggingsitem": 20,
+    "harvestcraft:hardenedleatherbootsitem": 20,
     /* backpacks */
     "improvedbackpacks:item.bound_leather": 10,
     "improvedbackpacks:item.backpack": 35,
@@ -34,5 +38,22 @@ for key, value in copyWithNeedle {
             Copy.byName(key)
         )
         .addTool(<ore:artisansNeedle>, value)
+        .create();
+}
+
+val copyWithChisel = {
+    /* backpack upgrades */
+    "improvedbackpacks:blank_upgrade_1", 25,
+    "improvedbackpacks:blank_upgrade_2", 25,
+    "improvedbackpacks:item.upgrade", 30,
+    "improvedbackpacks:item.upgrade.storage_stone", 35,
+} as int[string];
+
+for key, value in copyWithTrowel {
+    RecipeBuilder.get("tanner")
+         .setCopy(
+            Copy.byName(key)
+        )
+        .addTool(<ore:artisansChisel>, value)
         .create();
 }
