@@ -34,6 +34,8 @@ val copyWithNeedle = {
     "betteranimalsplus:bear_cape_brown": 20,
     "betteranimalsplus:bear_cape_black": 20,
     "betteranimalsplus:bear_cape_kermode": 20,
+    /* canteen */
+    "simpledifficulty:canteen_empty": 20,
 } as int[string];
 
 for key, value in copyWithNeedle {
