@@ -39,6 +39,15 @@ val copyWithNeedle = {
     "minecraft:green_banner": 15,
     "minecraft:red_banner": 15,
     "minecraft:black_banner": 15,
+    /* armor */
+    "simpledifficulty:wool_helmet": 20,
+    "simpledifficulty:wool_chestplate": 20,
+    "simpledifficulty:wool_leggings": 20,
+    "simpledifficulty:wool_boots": 20,
+    "simpledifficulty:ice_helmet": 20,
+    "simpledifficulty:ice_chestplate": 20,
+    "simpledifficulty:ice_leggings": 20,
+    "simpledifficulty:ice_boots": 20,
 } as int[string];
 
 for key, value in copyWithNeedle {
