@@ -47,10 +47,10 @@ for key, value in copyWithNeedle {
 
 val copyWithChisel = {
     /* backpack upgrades */
-    "improvedbackpacks:blank_upgrade_1", 25,
-    "improvedbackpacks:blank_upgrade_2", 25,
-    "improvedbackpacks:item.upgrade", 30,
-    "improvedbackpacks:item.upgrade.storage_stone", 35,
+    "improvedbackpacks:blank_upgrade_1": 25,
+    "improvedbackpacks:blank_upgrade_2": 25,
+    "improvedbackpacks:item.upgrade": 30,
+    "improvedbackpacks:item.upgrade.storage_stone": 35,
 } as int[string];
 
 for key, value in copyWithTrowel {
