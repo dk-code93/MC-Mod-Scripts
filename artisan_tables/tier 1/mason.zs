@@ -280,6 +280,7 @@ val copyWithChisel = {
     "additional_lights:fire_pit_l_cobblestone": 5,
     "additional_lights:fire_pit_l_cobblestone": 5,
     /* misc */
+    "mysticalagriculture:soulstone": 5,
     "quark:elder_prismarine_2": 5,
     "quark:duskbound_lantern": 5,
     "quark:sturdy_stone": 5,
