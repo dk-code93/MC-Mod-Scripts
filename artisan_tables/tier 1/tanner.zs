@@ -53,7 +53,7 @@ val copyWithChisel = {
     "improvedbackpacks:item.upgrade.storage_stone": 35,
 } as int[string];
 
-for key, value in copyWithTrowel {
+for key, value in copyWithChisel {
     RecipeBuilder.get("tanner")
          .setCopy(
             Copy.byName(key)
