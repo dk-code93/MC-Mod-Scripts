@@ -33,6 +33,7 @@ val recipesToCopy = [
     "charm:rotten_flesh_block",
     "quark:biotite_block",
     "quark:charcoal_block",
+    "quark:reed_block",
     "mysticalworld:silver_ingot_to_block",
     "mysticalworld:copper_ingot_to_block",
     "mysticalworld:amethyst_gem_to_block",
