@@ -293,6 +293,10 @@ val copyWithChisel = {
     /* misc decorative */
     "mysticalagriculture:soulstone": 5,
     "quark:elder_prismarine_2": 5,
+    "quark:sandstone_new_1": 5,
+    "quark:sandstone_new_2": 5,
+    "quark:sandstone_new_3": 5,
+    "quark:sandstone_new_4": 5,
     "quark:duskbound_lantern": 5,
     "quark:duskbound_block": 5,
     "quark:sturdy_stone": 5,
