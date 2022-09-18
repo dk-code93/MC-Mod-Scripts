@@ -38,6 +38,8 @@ val copyNoTool = [
   "quark:stained_planks_29",
   "quark:stained_planks_30",
   "quark:stained_planks_31",
+  /* misc decorative */
+  "quark:iron_plate",
 ] as string[];
 
 for recipe in copyNoTool {
@@ -174,6 +176,7 @@ val copyWithSaw = {
     "natura:nether/slabs/bloodwood_slab": 8,
     "natura:nether/slabs/darkwood_slab": 8,
     "natura:nether/slabs/fusewood_slab": 8,
+    "quark:iron_plate_slab": 8,
     "quark:stained_planks_white_slab": 8,
     "quark:stained_planks_orange_slab": 8,
     "quark:stained_planks_magenta_slab": 8,
@@ -234,6 +237,7 @@ val copyWithSaw = {
     "natura:nether/stairs/bloodwood_stairs": 8,
     "natura:nether/stairs/darkwood_stairs": 8,
     "natura:nether/stairs/fusewood_stairs": 8,
+    "quark:iron_plate_stairs": 8,
     "quark:stained_planks_white_stairs": 8,
     "quark:stained_planks_orange_stairs": 8,
     "quark:stained_planks_magenta_stairs": 8,
