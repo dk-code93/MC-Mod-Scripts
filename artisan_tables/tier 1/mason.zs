@@ -188,6 +188,7 @@ val copyWithTrowel = {
     "futuremc:wall/brick_wall": 8,
     "futuremc:wall/stone_brick_wall": 8,
     "futuremc:wall/nether_brick_wall": 8,
+    "futuremc:wall/red_nether_brick_wall": 8,
     "futuremc:wall/quartz_wall": 8,
     "futuremc:wall/red_sandstone_wall": 8,
     "futuremc:wall/end_stone_brick_wall": 8,
