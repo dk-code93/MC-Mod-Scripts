@@ -48,6 +48,23 @@ val copyWithNeedle = {
     "simpledifficulty:ice_chestplate": 20,
     "simpledifficulty:ice_leggings": 20,
     "simpledifficulty:ice_boots": 20,
+    /* quilted wool */
+    "quark:quilted_wool": 5,
+    "quark:quilted_wool_1": 5,
+    "quark:quilted_wool_2": 5,
+    "quark:quilted_wool_3": 5,
+    "quark:quilted_wool_4": 5,
+    "quark:quilted_wool_5": 5,
+    "quark:quilted_wool_6": 5,
+    "quark:quilted_wool_7": 5,
+    "quark:quilted_wool_8": 5,
+    "quark:quilted_wool_9": 5,
+    "quark:quilted_wool_10": 5,
+    "quark:quilted_wool_11": 5,
+    "quark:quilted_wool_12": 5,
+    "quark:quilted_wool_14": 5,
+    "quark:quilted_wool_15": 5,
+    "quark:quilted_wool_16": 5,
 } as int[string];
 
 for key, value in copyWithNeedle {
