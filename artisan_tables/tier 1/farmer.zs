@@ -8,6 +8,7 @@ val copyNoTool = [
     /* decorative blocks */
     "natura:overworld/grass/colored_grass",
     /* misc */
+    "quark:horse_whistle",
     "natura:common/wheat_seed_bag",
     "natura:common/carrots_bag",
     "natura:common/potatos_bag",
