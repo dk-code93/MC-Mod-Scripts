@@ -66,6 +66,7 @@ val copyWithSolderer = {
     "minecraft:hopper": 10,
     "quark:hopper": 10,
     "quark:chute": 10,
+    "quark:ender_watcher": 20,
     /* rails and minecarts */
     "minecraft:minecart": 10,
     "minecraft:rail": 10,
