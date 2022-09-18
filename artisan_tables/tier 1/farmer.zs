@@ -36,7 +36,10 @@ val copyWithSaw = {
     "harvestcraft:groundtrap": 20,
     "harvestcraft:watertrap": 20,
     "harvestcraft:apiary": 20,
-
+    /* decorative blocks */
+    "quark:reed_block_stairs": 10,
+    "quark:reed_block_slab": 10,
+    "quark:turf_slab": 10,
 } as int[string];
 
 for key, value in copyWithSaw {

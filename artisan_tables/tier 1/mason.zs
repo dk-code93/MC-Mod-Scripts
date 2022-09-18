@@ -279,6 +279,17 @@ val copyWithChisel = {
     "additional_lights:fire_pit_s_stone_bricks": 5,
     "additional_lights:fire_pit_l_cobblestone": 5,
     "additional_lights:fire_pit_l_cobblestone": 5,
+    /* pavement blocks */
+    "quark:world_stone_pavement": 8,
+    "quark:world_stone_pavement_1": 8,
+    "quark:world_stone_pavement_2": 8,
+    "quark:world_stone_pavement_3": 8,
+    "quark:world_stone_pavement_4": 8,
+    "quark:world_stone_pavement_5": 8,
+    "quark:world_stone_pavement_6": 8,
+    "quark:world_stone_pavement_7": 8,
+    "quark:world_stone_pavement_8": 8,
+    "quark:world_stone_pavement_9": 8,
     /* misc */
     "mysticalagriculture:soulstone": 5,
     "quark:elder_prismarine_2": 5,
