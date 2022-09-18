@@ -4,6 +4,50 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val copyNoTool = [
+  /* dyed planks */
+  "quark:stained_planks",
+  "quark:stained_planks_1",
+  "quark:stained_planks_2",
+  "quark:stained_planks_3",
+  "quark:stained_planks_4",
+  "quark:stained_planks_5",
+  "quark:stained_planks_6",
+  "quark:stained_planks_7",
+  "quark:stained_planks_8",
+  "quark:stained_planks_9",
+  "quark:stained_planks_10",
+  "quark:stained_planks_11",
+  "quark:stained_planks_12",
+  "quark:stained_planks_13",
+  "quark:stained_planks_14",
+  "quark:stained_planks_15",
+  "quark:stained_planks_16",
+  "quark:stained_planks_17",
+  "quark:stained_planks_18",
+  "quark:stained_planks_19",
+  "quark:stained_planks_20",
+  "quark:stained_planks_21",
+  "quark:stained_planks_22",
+  "quark:stained_planks_23",
+  "quark:stained_planks_24",
+  "quark:stained_planks_25",
+  "quark:stained_planks_26",
+  "quark:stained_planks_27",
+  "quark:stained_planks_28",
+  "quark:stained_planks_29",
+  "quark:stained_planks_30",
+  "quark:stained_planks_31",
+] as string[];
+
+for recipe in copyNoTool {
+    RecipeBuilder.get("carpenter")
+         .setCopy(
+            Copy.byName(recipe)
+        )
+        .create();
+}
+
 val copyWithSaw = {
     /* doors */
     "minecraft:wooden_door": 10,
