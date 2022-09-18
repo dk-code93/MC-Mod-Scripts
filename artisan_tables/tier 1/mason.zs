@@ -290,10 +290,11 @@ val copyWithChisel = {
     "quark:world_stone_pavement_7": 8,
     "quark:world_stone_pavement_8": 8,
     "quark:world_stone_pavement_9": 8,
-    /* misc */
+    /* misc decorative */
     "mysticalagriculture:soulstone": 5,
     "quark:elder_prismarine_2": 5,
     "quark:duskbound_lantern": 5,
+    "quark:duskbound_block": 5,
     "quark:sturdy_stone": 5,
     "quark:sturdy_stone": 5,
 } as int[string];
