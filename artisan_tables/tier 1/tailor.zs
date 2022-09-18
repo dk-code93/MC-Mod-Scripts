@@ -4,6 +4,67 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val copyNoTool = [
+    /* terracotta */
+    "minecraft:white_stained_hardened_clay",
+    "minecraft:orange_stained_hardened_clay",
+    "minecraft:magenta_stained_hardened_clay",
+    "minecraft:cyan_stained_hardened_clay",
+    "minecraft:yellow_stained_hardened_clay",
+    "minecraft:lime_stained_hardened_clay",
+    "minecraft:pink_stained_hardened_clay",
+    "minecraft:gray_stained_hardened_clay",
+    "minecraft:light_gray_stained_hardened_clay",
+    "minecraft:light_blue_stained_hardened_clay",
+    "minecraft:purple_stained_hardened_clay",
+    "minecraft:blue_stained_hardened_clay",
+    "minecraft:brown_stained_hardened_clay",
+    "minecraft:green_stained_hardened_clay",
+    "minecraft:red_stained_hardened_clay",
+    "minecraft:black_stained_hardened_clay",
+    /* quark wool */
+    "quark:wool",
+    "quark:wool_1",
+    "quark:wool_2",
+    "quark:wool_3",
+    "quark:wool_4",
+    "quark:wool_5",
+    "quark:wool_6",
+    "quark:wool_7",
+    "quark:wool_8",
+    "quark:wool_9",
+    "quark:wool_10",
+    "quark:wool_11",
+    "quark:wool_12",
+    "quark:wool_13",
+    "quark:wool_14",
+    "quark:wool_15",
+    "quark:wool_16",
+    "quark:wool_17",
+    "quark:wool_18",
+    "quark:wool_19",
+    "quark:wool_20",
+    "quark:wool_21",
+    "quark:wool_22",
+    "quark:wool_23",
+    "quark:wool_24",
+    "quark:wool_25",
+    "quark:wool_26",
+    "quark:wool_27",
+    "quark:wool_28",
+    "quark:wool_29",
+    "quark:wool_30",
+    "quark:wool_31",
+] as string[];
+
+for recipe in copyNoTool {
+    RecipeBuilder.get("tailor")
+         .setCopy(
+            Copy.byName(recipe)
+        )
+        .create();
+}
+
 val copyWithNeedle = {
     /* beds */
     "minecraft:white_bed": 10,
