@@ -299,7 +299,7 @@ val copyWithChisel = {
     "quark:sturdy_stone": 5,
 } as int[string];
 
-for key, value in copyWithTrowel {
+for key, value in copyWithChisel {
     RecipeBuilder.get("mason")
          .setCopy(
             Copy.byName(key)
