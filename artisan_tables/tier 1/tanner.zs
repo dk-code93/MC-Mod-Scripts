@@ -4,6 +4,19 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val copyNoTool =[
+    "minecraft:item_frame",
+    "quark:glass_item_frame",
+] as string[];
+
+for recipe in copyNoTool {
+    RecipeBuilder.get("tanner")
+         .setCopy(
+            Copy.byName(recipe)
+        )
+        .create();
+}
+
 val copyWithNeedle = {
     /* leather items */
     "minecraft:leather_helmet": 20,
@@ -36,7 +49,6 @@ val copyWithNeedle = {
     "betteranimalsplus:bear_cape_kermode": 20,
     /* misc */
     "simpledifficulty:canteen_empty": 20,
-    "minecraft:item_frame": 10,
 } as int[string];
 
 for key, value in copyWithNeedle {
