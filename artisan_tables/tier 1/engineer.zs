@@ -76,6 +76,8 @@ val copyWithSolderer = {
     "quark:furnace_minecart": 10,
     "quark:tnt_minecart": 10,
     "quark:chest_minecart": 10,
+    /* misc decorative */
+    "quark:iron_ladder": 3,
 } as int[string];
 
 for key, value in copyWithSolderer {
