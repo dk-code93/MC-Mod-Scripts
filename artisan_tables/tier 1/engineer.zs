@@ -65,6 +65,7 @@ val copyWithSolderer = {
     "minecraft:daylight_detector": 10,
     "minecraft:hopper": 10,
     "quark:hopper": 10,
+    "quark:chute": 10,
     /* rails and minecarts */
     "minecraft:minecart": 10,
     "minecraft:rail": 10,
