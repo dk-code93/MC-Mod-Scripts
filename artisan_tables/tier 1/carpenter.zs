@@ -117,29 +117,6 @@ val copyWithSaw = {
     /* ladders */
     "minecraft:ladder": 3,
     "roots:wildwood_ladder": 3,
-    /* boats */
-    "minecraft:boat": 8,
-    "minecraft:spruce_boat": 8,
-    "minecraft:birch_boat": 8,
-    "minecraft:jungle_boat": 8,
-    "minecraft:acacia_boat": 8,
-    "minecraft:dark_oak_boat": 8,
-    "biomesoplenty:boat_sacred_oak": 8,
-    "biomesoplenty:boat_cherry": 8,
-    "biomesoplenty:boat_umbran": 8,
-    "biomesoplenty:boat_fir": 8,
-    "biomesoplenty:boat_ethereal": 8,
-    "biomesoplenty:boat_magic": 8,
-    "biomesoplenty:boat_mangrove": 8,
-    "biomesoplenty:boat_palm": 8,
-    "biomesoplenty:boat_redwood": 8,
-    "biomesoplenty:boat_willow": 8,
-    "biomesoplenty:boat_pine": 8,
-    "biomesoplenty:boat_hellbark": 8,
-    "biomesoplenty:boat_jacaranda": 8,
-    "biomesoplenty:boat_mahogany": 8,
-    "biomesoplenty:boat_ebony": 8,
-    "biomesoplenty:boat_eucalyptus": 8,
     /* slabs */
     "minecraft:oak_wooden_slab": 8,
     "minecraft:spruce_wooden_slab": 8,
@@ -260,16 +237,6 @@ val copyWithSaw = {
     "quark:bark_jungle_stairs": 8,
     "quark:bark_acacia_stairs": 8,
     "quark:bark_dark_oak_stairs": 8,
-    /* chests */
-    "quark:custom_chest_1": 8,
-    "quark:custom_chest_2": 8,
-    "quark:custom_chest_3": 8,
-    "quark:custom_chest_4": 8,
-    "quark:custom_chest_5": 8,
-    "quark:custom_chest_6": 8,
-    "quark:custom_chest_7": 8,
-    "quark:custom_chest_8": 8,
-    "quark:custom_chest_9": 8,
     /* fences */
     "minecraft:fence": 5,
     "minecraft:spruce_fence": 5,
@@ -345,28 +312,6 @@ val copyWithSaw = {
     "natura:decorative/nether/fence_gate/darkwood_fence_gate": 5,
     "natura:decorative/nether/fence_gate/fusewood_fence_gate": 5,
     "roots:wildwood_fence_gate": 5,
-    /* bookshelf */
-    "minecraft:bookshelf": 10,
-    "quark:custom_bookshelf": 10,
-    "quark:custom_bookshelf_1": 10,
-    "quark:custom_bookshelf_2": 10,
-    "quark:custom_bookshelf_3": 10,
-    "quark:custom_bookshelf_4": 10,
-    "charm:bookshelf_chest": 10,
-    "natura:decorative/overworld/bookshelf/eucalyptus_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/willow_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/hopseed_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/sakura_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/redwood_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/redwood_bark_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/tiger_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/maple_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/silverbell_bookshelf": 10,
-    "natura:decorative/overworld/bookshelf/amaranth_bookshelf": 10,
-    "natura:decorative/nether/bookshelf/ghostwood_bookshelf": 10,
-    "natura:decorative/nether/bookshelf/bloodwood_bookshelf": 10,
-    "natura:decorative/nether/bookshelf/darkwood_bookshelf": 10,
-    "natura:decorative/nether/bookshelf/fusewood_bookshelf": 10,
     /* walls */
     "mysticalworld:charred_wall": 8,
     "quark:bark_oak_wall": 8,
@@ -383,13 +328,6 @@ val copyWithSaw = {
     "quark:bark_3": 2,
     "quark:bark_4": 2,
     "quark:bark_5": 2,
-    /* barrels */
-    "charm:barrel": 8,
-    "charm:barrel_1": 8,
-    "charm:barrel_2": 8,
-    "charm:barrel_3": 8,
-    "charm:barrel_4": 8,
-    "charm:barrel_5": 8,
  } as int[string];
 
 for key, value in copyWithSaw {
@@ -398,6 +336,80 @@ for key, value in copyWithSaw {
             Copy.byName(key)
         )
         .addTool(<ore:artisansHandsaw>, value)
+        .create();
+}
+
+val copyWithFramingHammer ={
+  /* boats */
+  "minecraft:boat": 8,
+  "minecraft:spruce_boat": 8,
+  "minecraft:birch_boat": 8,
+  "minecraft:jungle_boat": 8,
+  "minecraft:acacia_boat": 8,
+  "minecraft:dark_oak_boat": 8,
+  "biomesoplenty:boat_sacred_oak": 8,
+  "biomesoplenty:boat_cherry": 8,
+  "biomesoplenty:boat_umbran": 8,
+  "biomesoplenty:boat_fir": 8,
+  "biomesoplenty:boat_ethereal": 8,
+  "biomesoplenty:boat_magic": 8,
+  "biomesoplenty:boat_mangrove": 8,
+  "biomesoplenty:boat_palm": 8,
+  "biomesoplenty:boat_redwood": 8,
+  "biomesoplenty:boat_willow": 8,
+  "biomesoplenty:boat_pine": 8,
+  "biomesoplenty:boat_hellbark": 8,
+  "biomesoplenty:boat_jacaranda": 8,
+  "biomesoplenty:boat_mahogany": 8,
+  "biomesoplenty:boat_ebony": 8,
+  "biomesoplenty:boat_eucalyptus": 8,
+  /* chests */
+  "quark:custom_chest_1": 8,
+  "quark:custom_chest_2": 8,
+  "quark:custom_chest_3": 8,
+  "quark:custom_chest_4": 8,
+  "quark:custom_chest_5": 8,
+  "quark:custom_chest_6": 8,
+  "quark:custom_chest_7": 8,
+  "quark:custom_chest_8": 8,
+  "quark:custom_chest_9": 8,
+  /* barrels */
+  "charm:barrel": 8,
+  "charm:barrel_1": 8,
+  "charm:barrel_2": 8,
+  "charm:barrel_3": 8,
+  "charm:barrel_4": 8,
+  "charm:barrel_5": 8,
+  /* bookshelf */
+  "minecraft:bookshelf": 10,
+  "quark:custom_bookshelf": 10,
+  "quark:custom_bookshelf_1": 10,
+  "quark:custom_bookshelf_2": 10,
+  "quark:custom_bookshelf_3": 10,
+  "quark:custom_bookshelf_4": 10,
+  "charm:bookshelf_chest": 10,
+  "natura:decorative/overworld/bookshelf/eucalyptus_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/willow_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/hopseed_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/sakura_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/redwood_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/redwood_bark_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/tiger_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/maple_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/silverbell_bookshelf": 10,
+  "natura:decorative/overworld/bookshelf/amaranth_bookshelf": 10,
+  "natura:decorative/nether/bookshelf/ghostwood_bookshelf": 10,
+  "natura:decorative/nether/bookshelf/bloodwood_bookshelf": 10,
+  "natura:decorative/nether/bookshelf/darkwood_bookshelf": 10,
+  "natura:decorative/nether/bookshelf/fusewood_bookshelf": 10,
+} as int[string];
+
+for key, value in copyWithFramingHammer {
+    RecipeBuilder.get("carpenter")
+         .setCopy(
+            Copy.byName(key)
+        )
+        .addTool(<ore:artisansFramingHammer>, value)
         .create();
 }
 
