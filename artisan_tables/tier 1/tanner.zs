@@ -19,10 +19,6 @@ for recipe in copyNoTool {
 
 val copyWithNeedle = {
     /* leather items */
-    "minecraft:leather_helmet": 20,
-    "minecraft:leather_chestplate": 20,
-    "minecraft:leather_leggings": 20,
-    "minecraft:leather_boots": 20,
     "ancientbeasts:scale_armor": 20,
     "ancientbeasts:scale_hood": 20,
     "ancientbeasts:charred_cloak": 20,

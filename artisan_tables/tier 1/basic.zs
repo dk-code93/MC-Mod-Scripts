@@ -10,6 +10,10 @@ val recipesToCopy = [
     "minecraft:furnace",
     "minecraft:paper",
     "roots:paper",
+    "minecraft:leather_helmet",
+    "minecraft:leather_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:leather_boots",
     /* basic tools */
     "notreepunching:tools/flint_pickaxe",
     "notreepunching:tools/flint_axe",
