@@ -48,7 +48,7 @@ for key, value in copyWithSaw {
          .setCopy(
             Copy.byName(key)
         )
-        .addTool(<ore:artisansSaw>, value)
+        .addTool(<ore:artisansHandsaw>, value)
         .create();
 }
 
