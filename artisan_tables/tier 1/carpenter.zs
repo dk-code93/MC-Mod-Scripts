@@ -5,6 +5,15 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
 val copyNoTool = [
+  /* bows */
+  "minecraft:bow",
+  /* bark blocks */
+  "quark:bark",
+  "quark:bark_1",
+  "quark:bark_2",
+  "quark:bark_3",
+  "quark:bark_4",
+  "quark:bark_5",
   /* dyed planks */
   "quark:stained_planks",
   "quark:stained_planks_1",
@@ -176,8 +185,6 @@ val copyWithSaw = {
     "quark:bark_jungle_slab": 8,
     "quark:bark_acacia_slab": 8,
     "quark:bark_dark_oak_slab": 8,
-    /* bows */
-    "minecraft:bow": 20,
     /* stairs */
     "minecraft:oak_stairs": 8,
     "minecraft:spruce_stairs": 8,
@@ -275,6 +282,7 @@ val copyWithSaw = {
     "natura:decorative/nether/fence/darkwood_fence": 5,
     "natura:decorative/nether/fence/fusewood_fence": 5,
     "roots:wildwood_fence": 5,
+    /* fence gates */
     "minecraft:fence_gate": 5,
     "minecraft:spruce_fence_gate": 5,
     "minecraft:birch_fence_gate": 5,
@@ -321,13 +329,6 @@ val copyWithSaw = {
     "quark:bark_acacia_wall": 8,
     "quark:bark_dark_oak_wall": 8,
     "roots:wildwood_wall": 8,
-    /* bark blocks */
-    "quark:bark": 2,
-    "quark:bark_1": 2,
-    "quark:bark_2": 2,
-    "quark:bark_3": 2,
-    "quark:bark_4": 2,
-    "quark:bark_5": 2,
  } as int[string];
 
 for key, value in copyWithSaw {
