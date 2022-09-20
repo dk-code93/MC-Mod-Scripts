@@ -48,6 +48,7 @@ val copyNoTool = [
   "quark:stained_planks_30",
   "quark:stained_planks_31",
   /* misc decorative */
+  "quark:paper_wall_big",
   "quark:iron_plate",
 ] as string[];
 
@@ -403,6 +404,9 @@ val copyWithFramingHammer ={
   "natura:decorative/nether/bookshelf/bloodwood_bookshelf": 10,
   "natura:decorative/nether/bookshelf/darkwood_bookshelf": 10,
   "natura:decorative/nether/bookshelf/fusewood_bookshelf": 10,
+  /* paper items */
+  "quark:paper_wall": 10,
+  "quark:paper_lantern": 3,
 } as int[string];
 
 for key, value in copyWithFramingHammer {
