@@ -11,6 +11,9 @@ val copyNoTool = [
     "natura:nether/bowls/bloodwood_bowl",
     "natura:nether/bowls/darkwood_bowl",
     "natura:nether/bowls/fusewood_bowl",
+    /* salads */
+    "harvestcraft:strawberrysaladitem",
+    "harvestcraft:grapesaladitem",
 ] as string[];
 
 for recipe in copyNoTool {
@@ -70,8 +73,26 @@ val copyWithCuttingBoard = {
     "harvestcraft:pizzasliceitem_anchovypepperonipizzaitem_x13 - copy (2)": 5,
     /* veggie items */
     "harvestcraft:vegetarianlettucewrapitem": 5,
+    /* salads */
+    "harvestcraft:potatosaladitem": 5,
+    "harvestcraft:eggsaladitem": 5,
+    "harvestcraft:fruitsaladitem": 5,
+    "harvestcraft:springsaladitem": 5,
+    "harvestcraft:cucumbersaladitem": 5,
+    "harvestcraft:beetsaladitem": 5,
+    "harvestcraft:summerradishsaladitem": 5,
     "harvestcraft:sunflowerbroccolisaladitem": 5,
-    "harvestcraft:springsaladitem": 3,
+    "harvestcraft:mixedsaladitem": 5,
+    "harvestcraft:citrussaladitem": 5,
+    "harvestcraft:tunasaladitem": 5,
+    "harvestcraft:berryvinaigrettesaladitem": 5,
+    "harvestcraft:fiestacornsaladitem": 5,
+    "harvestcraft:threebeansaladitem": 5,
+    "harvestcraft:crayfishsaladitem": 5,
+    "harvestcraft:nopalessaladitem_cactusfruit": 5,
+    "harvestcraft:nopalessaladitem_cactus": 5,
+    "harvestcraft:dandelionsaladitem": 5,
+    "harvestcraft:glisteningsaladitem": 5,
     /* tofu items */
     "harvestcraft:rawtofuttonitem": 3,
     "harvestcraft:rawtofurkeyitem": 3,
