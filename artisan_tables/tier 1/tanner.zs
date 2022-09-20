@@ -62,6 +62,8 @@ val copyWithChisel = {
     "improvedbackpacks:blank_upgrade_2": 25,
     "improvedbackpacks:item.upgrade": 30,
     "improvedbackpacks:item.upgrade.storage_stone": 35,
+    /* misc */
+    "simpledifficulty:iron_canteen_empty": 25,
 } as int[string];
 
 for key, value in copyWithChisel {
