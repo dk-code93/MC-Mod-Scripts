@@ -58,6 +58,15 @@ val copyWithCuttingBoard = {
     "harvestcraft:hamsweetpicklesandwichitem": 5,
     "harvestcraft:meatloafsandwichitem": 5,
     "harvestcraft:cucumbersandwichitem": 5,
+    /* sausage items */
+    "harvestcraft:sausageitem_itemsalt": 3,
+    "harvestcraft:sausagerollitem": 3,
+    /* pizza items */
+    "harvestcraft:pizzasliceitem_supremepizzaitem_x14": 5,
+    "harvestcraft:pizzasliceitem_pizzaitem_x11": 5,
+    "harvestcraft:pizzasliceitem_meatfeastpizzaitem_x24": 5,
+    "harvestcraft:pizzasliceitem_hamandpineapplepizzaitem_x9": 5,
+    "harvestcraft:pizzasliceitem_anchovypepperonipizzaitem_x13 - copy (2)": 5,
 } as int[string];
 
 for key, value in copyWithCuttingBoard {
