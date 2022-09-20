@@ -71,24 +71,23 @@ val copyWithCuttingBoard = {
     "harvestcraft:pizzasliceitem_meatfeastpizzaitem_x24": 5,
     "harvestcraft:pizzasliceitem_hamandpineapplepizzaitem_x9": 5,
     "harvestcraft:pizzasliceitem_anchovypepperonipizzaitem_x13 - copy (2)": 5,
-    /* veggie items */
+    /* wraps */
     "harvestcraft:vegetarianlettucewrapitem": 5,
+    "harvestcraft:porklettucewrapitem": 5,
+    "harvestcraft:fishlettucewrapitem": 5,
     /* salads */
     "harvestcraft:potatosaladitem": 5,
     "harvestcraft:eggsaladitem": 5,
     "harvestcraft:fruitsaladitem": 5,
     "harvestcraft:springsaladitem": 5,
     "harvestcraft:cucumbersaladitem": 5,
-    
     "harvestcraft:sunflowerbroccolisaladitem": 5,
     "harvestcraft:mixedsaladitem": 5,
     "harvestcraft:citrussaladitem": 5,
     "harvestcraft:tunasaladitem": 5,
     "harvestcraft:berryvinaigrettesaladitem": 5,
-    
     "harvestcraft:nopalessaladitem_cactusfruit": 5,
     "harvestcraft:nopalessaladitem_cactus": 5,
-    
     /* tofu items */
     "harvestcraft:rawtofuttonitem": 3,
     "harvestcraft:rawtofurkeyitem": 3,
