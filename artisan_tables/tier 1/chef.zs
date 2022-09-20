@@ -137,6 +137,6 @@ for recipe in copyMixingBowl {
             Copy.byName(recipe)
             .replaceInput(<harvestcraft:mixingbowlitem>, null)
         )
-        .addTool(<harvestcraft:mixingbowlitem>)
+        .addTool(<harvestcraft:mixingbowlitem>, 0)
         .create();
 }
