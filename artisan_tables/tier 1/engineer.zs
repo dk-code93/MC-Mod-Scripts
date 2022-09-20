@@ -24,6 +24,7 @@ val copyWithSpanner = {
     "minecraft:compass": 15,
     "minecraft:clock": 15,
     "simpledifficulty:thermometer": 15,
+    "sereneseasons:season_clock": 15,
     /* redstone items */
     "minecraft:noteblock": 15,
     "minecraft:redstone_lamp": 15,
