@@ -131,10 +131,10 @@ val copyMixingBowl = [
     "harvestcraft:crayfishsaladitem",
  ] as string[];
 
-for key, value in copyWithCuttingBoard {
+for recipe in copyMixingBowl {
     RecipeBuilder.get("chef")
          .setCopy(
-            Copy.byName(key)
+            Copy.byName(recipe)
             .replaceInput(<harvestcraft:mixingbowlitem>, null)
         )
         .addTool(<harvestcraft:mixingbowlitem>)
