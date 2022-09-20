@@ -119,14 +119,24 @@ RecipeBuilder.get("chef")
   .setName("placable_plate")
   .create();
 
-val copyMixingBowl = {
+val copyMixingBowl = [
     /* salads */
-    "harvestcraft:beetsaladitem": 5,
-    "harvestcraft:summerradishsaladitem": 5,
-    "harvestcraft:ceasarsaladitem": 5,
-    "harvestcraft:dandelionsaladitem": 5,
-    "harvestcraft:glisteningsaladitem": 5,
-    "harvestcraft:fiestacornsaladitem": 5,
-    "harvestcraft:threebeansaladitem": 5,
-    "harvestcraft:crayfishsaladitem": 5,
-} as int[string];
+    "harvestcraft:beetsaladitem",
+    "harvestcraft:summerradishsaladitem",
+    "harvestcraft:ceasarsaladitem",
+    "harvestcraft:dandelionsaladitem",
+    "harvestcraft:glisteningsaladitem",
+    "harvestcraft:fiestacornsaladitem",
+    "harvestcraft:threebeansaladitem",
+    "harvestcraft:crayfishsaladitem",
+ ] as string[];
+
+for key, value in copyWithCuttingBoard {
+    RecipeBuilder.get("chef")
+         .setCopy(
+            Copy.byName(key)
+            .replaceInput(<harvestcraft:mixingbowlitem>, null)
+        )
+        .addTool(<harvestcraft:mixingbowlitem>)
+        .create();
+}
