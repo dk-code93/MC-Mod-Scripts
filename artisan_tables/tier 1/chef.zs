@@ -120,6 +120,11 @@ val copyWithCuttingBoard = {
     "harvestcraft:coleslawburgeritem": 3,
     "harvestcraft:beetburgeritem": 3,
     "harvestcraft:mcpamitem_foodpickles": 3,
+    /* toasts */
+    "harvestcraft:vegemiteontoastitem": 3,
+    "harvestcraft:grilledcheesevegemitetoastitem": 3,
+    "harvestcraft:beansontoastitem": 3,
+    "harvestcraft:netherstartoastitem": 5,
     /* meals */
     "harvestcraft:southernstylebreakfastitem": 4,
     "harvestcraft:ploughmanslunchitem": 4,
