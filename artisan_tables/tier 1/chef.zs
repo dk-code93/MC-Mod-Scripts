@@ -70,6 +70,9 @@ val copyWithCuttingBoard = {
     "harvestcraft:footlongitem_listallchickencooked": 3,
     "harvestcraft:mettbrotchenitem": 3,
     /* sausage items */
+    "harvestcraft:chorizoitem_itemsalt": 3,
+    "harvestcraft:chilidogitem": 3,
+    "harvestcraft:slawdogitem": 3,
     "harvestcraft:sausageitem_itemsalt": 3,
     "harvestcraft:sausagerollitem": 3,
     /* pizza items */
@@ -125,7 +128,34 @@ val copyWithCuttingBoard = {
     "harvestcraft:grilledcheesevegemitetoastitem": 3,
     "harvestcraft:beansontoastitem": 3,
     "harvestcraft:netherstartoastitem": 5,
+    /* potatoes */
+    "harvestcraft:tunapotatoitem": 3,
+    /* sushi */
+    "harvestcraft:bentoboxitem": 3,
+    "harvestcraft:crabkimbapitem": 3,
+    "harvestcraft:futomakiitem": 3,
+    "harvestcraft:musubiitem": 3,
+    "harvestcraft:tunaonigiriitem": 3,
+    "harvestcraft:sushiitem": 3,
+    /* snacks */
+    "harvestcraft:chipsanddipitem": 3,
+    "harvestcraft:crackersandcheeseitem": 3,
+    "harvestcraft:hummusitem": 3,
+    "harvestcraft:nachoesitem": 3,
+    "harvestcraft:tortillachipsitem": 3,
+    "harvestcraft:theatreboxitem": 3,
+    "harvestcraft:pepperjellyandcrackersitem": 3,
     /* meals */
+    "harvestcraft:bbqchickenbiscuititem": 3,
+    "harvestcraft:biscuitsandgravyitem": 3,
+    "harvestcraft:chickenbiscuititem": 3,
+    "harvestcraft:chickenandwafflesitem": 3,
+    "harvestcraft:eggsbenedictitem": 3,
+    "harvestcraft:friedfeastitem": 3,
+    "harvestcraft:mashedpotatoeschickenbiscuititem": 3,
+    "harvestcraft:sundayhighteaitem": 3,
+    "harvestcraft:surfandturfitem": 3,
+    "harvestcraft:weekendpicnicitem": 4,
     "harvestcraft:southernstylebreakfastitem": 4,
     "harvestcraft:ploughmanslunchitem": 4,
     "harvestcraft:deluxechickencurryitem": 4,
@@ -134,6 +164,8 @@ val copyWithCuttingBoard = {
     "harvestcraft:thankfuldinneritem": 4,
     "harvestcraft:koreandinneritem": 4,
     /* desserts */
+    "harvestcraft:cookiesandmilkitem": 3,
+    "harvestcraft:dangoitem": 3,
     "harvestcraft:merveilleuxitem": 3,
     "harvestcraft:meringuerouladeitem": 3,
     "harvestcraft:honeybreaditem_drophoney": 3,
@@ -142,6 +174,16 @@ val copyWithCuttingBoard = {
     "harvestcraft:etonmessitem": 3,
     "harvestcraft:applesnowitem": 3,
     "harvestcraft:saltedcaramelitem_dustsalt": 3,
+    /* misc */
+    "harvestcraft:bolognaitem_x3_itemsalt": 3,
+    "harvestcraft:ediblerootitem": 1,
+    "harvestcraft:gravlaxitem_itemsalt": 3,
+    "harvestcraft:grilledskeweritem": 3,
+    "harvestcraft:lambkebabitem": 3,
+    "harvestcraft:noodlesitem_x3": 3,
+    "harvestcraft:pepperoniitem_dustsalt": 3,
+    "harvestcraft:suaderoitem": 3,
+    "harvestcraft:steaktartaritem": 3,
 } as int[string];
 
 for key, value in copyWithCuttingBoard {
