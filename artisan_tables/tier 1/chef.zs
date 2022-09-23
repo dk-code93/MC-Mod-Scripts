@@ -288,7 +288,7 @@ val copyMixingBowl = {
     "harvestcraft:threebeansaladitem": 1,
     "harvestcraft:crayfishsaladitem": 1,
     /* drinks */
-    "harvestcraft:cherryslushieitem": ,
+    "harvestcraft:cherryslushieitem": 0,
     "harvestcraft:ironbrewitem": 0,
     "harvestcraft:shrimpcocktailitem": 0,
     "harvestcraft:seedenergygelitem": 0,
