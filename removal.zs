@@ -37,5 +37,5 @@ val removeByName = [
 ] as string[];
 
 for recipe in removeByName {
-    recipes.removeByName(recipe);
+    recipes.removeByRecipeName(recipe);
 }
