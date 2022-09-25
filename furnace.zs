@@ -2,6 +2,14 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val furnaceToRemove = [
+    <betteranimalsplus:fried_egg>,
+] as IItemStack[];
+
+for item in furnaceToRemove {
+    furnace.remove(item);
+}
+
 val furnaceToCreate = {
     <harvestcraft:popcornitem>: <harvestcraft:cornitem>,
     <harvestcraft:toastitem>: <minecraft:bread>,
@@ -14,14 +22,14 @@ val furnaceToCreate = {
     <harvestcraft:bakedsweetpotatoitem>: <harvestcraft:sweetpotatoitem>,
     <harvestcraft:bakedcactusitem>: <minecraft:cactus>,
     <harvestcraft:vanillaitem>: <harvestcraft:vanillabeanitem>,
+    <harvestcraft:grilledasparagusitem>: <harvestcraft:asparagusitem>,
+    <harvestcraft:grilledeggplantitem>: <harvestcraft:eggplantitem>,
 } as IIngredient[IItemStack];
     
 for key, value in furnaceToCreate {
-    furnace.addRecipe(key, value, 2);
+    furnace.addRecipe(key, value, 0.3);
 }
 
-furnace.addRecipe(<harvestcraft:ricecakeitem>, <ore:cropRice>, 2);
-furnace.addRecipe(<harvestcraft:raisinsitem>, <ore:cropGrape>, 2);
-
-    /* : <harvestcraft:riceitem>,
-    : <harvestcraft:> */
+furnace.addRecipe(<harvestcraft:grilledmushroomitem>, <ore:listAllmushroom>, 0.3);
+furnace.addRecipe(<harvestcraft:ricecakeitem>, <ore:cropRice>, 0.3);
+furnace.addRecipe(<harvestcraft:raisinsitem>, <ore:cropGrape>, 0.3);

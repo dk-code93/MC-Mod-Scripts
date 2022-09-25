@@ -24,6 +24,7 @@ val removeByItem = [
     <harvestcraft:bakedcactusitem>,
     <harvestcraft:vanillaitem>,
     <harvestcraft:popcornitem>,
+    <harvestcraft:grilledmushroomitem>,
 ] as IItemStack[];
 
 for item in removeByItem {
