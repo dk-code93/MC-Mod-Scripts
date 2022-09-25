@@ -17,14 +17,24 @@ val copyNoSecondary = [
     "harvestcraft:meringuecookieitem",
     "harvestcraft:lavendershortbreaditem",
     "harvestcraft:gingersnapsitem",
+    "harvestcraft:chaoscookieitem",
+    "harvestcraft:carrotcupcakeitem",
+    "harvestcraft:buttercookieitem",
     /* cupcakes */
+    "harvestcraft:chilicupcakeitem",
+    "harvestcraft:coffeecupcakeitem",
     "harvestcraft:mintcupcakeitem",
     "harvestcraft:peanutbuttercupcakeitem",
     "harvestcraft:redvelvetcupcakeitem",
     "harvestcraft:vanillacupcakeitem",
     "harvestcraft:strawberrycupcakeitem",
     "harvestcraft:lemoncupcakeitem",
+    "harvestcraft:chocolatecupcakeitem",
+    "harvestcraft:caramelcupcakeitem",
     /* cakes */
+    "harvestcraft:carrotcakeitem",
+    "harvestcraft:cheesecakeitem",
+    "harvestcraft:chocolatesprinklecakeitem",
     "harvestcraft:fruitcakeitem",
     "harvestcraft:holidaycakeitem",
     "harvestcraft:jaffaitem",
@@ -37,8 +47,24 @@ val copyNoSecondary = [
     /* pies */
     "harvestcraft:slimepieitem",
     "harvestcraft:mincepieitem",
-    /* desserts misc */
+    /* muffins */
+    "harvestcraft:blueberrymuffinitem",
+    "harvestcraft:pumpkinmuffinitem",
     "harvestcraft:durianmuffinitem",
+    /* desserts misc */
+    "harvestcraft:bakedalaskaitem",
+    "harvestcraft:baklavaitem",
+    "harvestcraft:battenbergitem",
+    "harvestcraft:brownieitem",
+    "harvestcraft:buttertartitem",
+    "harvestcraft:candiedpecansitem",
+    "harvestcraft:candiedlemonitem",
+    "harvestcraft:cheesedanishitem",
+    "harvestcraft:chocolatecaramelfudgeitem",
+    "harvestcraft:chocolatecoconutbaritem",
+    "harvestcraft:chocolaterollitem",
+    "harvestcraft:cinnamonrollitem",
+    "harvestcraft:cranberrybaritem",
     "harvestcraft:eggtartitem",
     "harvestcraft:figbaritem",
     "harvestcraft:jamrollitem",
@@ -46,7 +72,6 @@ val copyNoSecondary = [
     "harvestcraft:meringuebombeitem",
     "harvestcraft:meringuebrownieitem",
     "harvestcraft:pavlovaitem",
-    "harvestcraft:pumpinmuffinitem",
     "harvestcraft:pumpkinoatsconesitem",
     "harvestcraft:smoresitem",
     "harvestcraft:timtamitem",
@@ -55,6 +80,11 @@ val copyNoSecondary = [
     "harvestcraft:strawberrysouffleitem",
     "harvestcraft:honeybunitem_foodhoneydrop",
     /* bread */
+    "harvestcraft:banananutbreaditem_itemsalt",
+    "harvestcraft:biscuititem",
+    "harvestcraft:briochebunitem_x3",
+    "harvestcraft:cheeseontoastitem",
+    "harvestcraft:cinnamonbreaditem",
     "harvestcraft:croissantitem",
     "harvestcraft:damperitem_itemsalt",
     "harvestcraft:datenutbreaditem",
@@ -68,6 +98,10 @@ val copyNoSecondary = [
     "harvestcraft:zucchinibreaditem",
     "harvestcraft:gingerbreaditem",
     /* meats */
+    "harvestcraft:baconwrappedchiliitem",
+    "harvestcraft:baconwrappeddatesitem",
+    "harvestcraft:bakedhamitem",
+    "harvestcraft:chickencordonbleuitem",
     "harvestcraft:honeysoyribsitem_foodhoneydrop",
     "harvestcraft:maplecandiedbaconitem",
     "harvestcraft:meatloafitem",
@@ -75,11 +109,15 @@ val copyNoSecondary = [
     "harvestcraft:pistachiobakedsalmonitem",
     "harvestcraft:sausagebeanmeltitem",
     "harvestcraft:toadintheholeitem",
-    /* veggies */
+    /* pizza */
+    "harvestcraft:anchovypepperonipizzaitem",
+    "harvestcraft:bbqchickenpizzaitem",
     "harvestcraft:hamandpineapplepizzaitem",
-    "harvestcraft:okrachipsitem_itemsalt",
     "harvestcraft:pizzaitem_listallporkraw",
     "harvestcraft:pizzaitem_foodpepperoni",
+    /* veggies */
+    "harvestcraft:chilipoppersitem",
+    "harvestcraft:okrachipsitem_itemsalt",
     "harvestcraft:stuffedchilipeppersitem",
     "harvestcraft:stuffedeggplantitem",
     "harvestcraft:stuffedmushroomitem",
@@ -87,6 +125,8 @@ val copyNoSecondary = [
     "harvestcraft:veggiestripsitem_itemsalt",
     "harvestcraft:zucchinifriesitem",
     /* snacks */
+    "harvestcraft:crackeritem",
+    "harvestcraft:crackersitem",
     "harvestcraft:crispyricepuffbarsitem",
     "harvestcraft:fishsticksitem",
     "harvestcraft:friesitem_itemsalt",
@@ -97,6 +137,8 @@ val copyNoSecondary = [
     /* pasta */
     "harvestcraft:timpanoitem",
     /* misc */
+    "harvestcraft:cevicheitem",
+    "harvestcraft:cornishpastyitem",
     "harvestcraft:enchiladaitem",
 ] as string[];
 
@@ -110,7 +152,7 @@ for recipe in copyNoSecondary {
     .create();
 }
 
-val copyWithBottle = [
+/* val copyWithBottle = [
 
 ] as string[];
 
@@ -123,10 +165,15 @@ for recipe in copyWithBottle {
     .setSecondaryIngredients([<minecraft:glass_bottle>])
     .addTool(<harvestcraft:bakewareitem>, 0)
     .create();
-}
+} */
 
 val copyWithBowl = [
     /* pies */
+    "harvestcraft:applepieitem",
+    "harvestcraft:blueberrypieitem",
+    "harvestcraft:cherrypieitem",
+    "harvestcraft:chickenpotpieitem",
+    "harvestcraft:cottagepieitem",
     "harvestcraft:gooseberrypieitem",
     "harvestcraft:keylimepieitem",
     "harvestcraft:lemonmeringueitem",
@@ -142,12 +189,15 @@ val copyWithBowl = [
     "harvestcraft:pecanpieitem",
     "harvestcraft:gingeredrhubarbtartitem",
     /* desserts misc */
+    "harvestcraft:blackberrycobbleritem",
+    "harvestcraft:cobblestonecobbleritem",
     "harvestcraft:fruitcrumbleitem",
     "harvestcraft:peachcobbleritem",
     "harvestcraft:raspberrytrifleitem",
     "harvestcraft:sweetpotatosouffleitem",
     "harvestcraft:sunflowerwheatrollsitem_itemsalt",
     /* veggies */
+    "harvestcraft:babaganoushitem",
     "harvestcraft:eggplantparmitem",
     "harvestcraft:mushroomrisottoitem",
     "harvestcraft:ovenroastedcaulifloweritem",
@@ -163,6 +213,8 @@ val copyWithBowl = [
     /* meats */
     "harvestcraft:meatpieitem",
     /* meals */
+    "harvestcraft:chickencelerycasseroleitem",
+    "harvestcraft:crawfishetoufeeitem",
     "harvestcraft:greenbeancasseroleitem",
     "harvestcraft:hotdishcasseroleitem",
     "harvestcraft:zucchinibakeitem",
@@ -183,10 +235,13 @@ for recipe in copyWithBowl {
 
 val copyWithPlate = [
     /* veggies */
+    "harvestcraft:bakedbeetsitem",
+    "harvestcraft:bakedturnipsitem_itemsalt",
     "harvestcraft:mushroomlasagnaitem",
     "harvestcraft:tatertotsitem",
     "harvestcraft:roastpotatoesitem_itemsalt",
     /* meats */
+    "harvestcraft:chickenparmasanitem",
     "harvestcraft:garlicchickenitem",
     "harvestcraft:honeylemonlambitem_foodhoneydrop",
     "harvestcraft:lambwithmintsauceitem",
