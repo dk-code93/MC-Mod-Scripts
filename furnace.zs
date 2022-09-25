@@ -20,8 +20,8 @@ for key, value in furnaceToCreate {
     furnace.addRecipe(key, value, 2);
 }
 
-furnace.addRecipe(<harvestcraft:ricecakeitem>, <ore:cropRice>);
-furnace.addRecipe(<harvestcraft:raisinsitem>, <ore:cropGrape>);
+furnace.addRecipe(<harvestcraft:ricecakeitem>, <ore:cropRice>, 2);
+furnace.addRecipe(<harvestcraft:raisinsitem>, <ore:cropGrape>, 2);
 
     /* : <harvestcraft:riceitem>,
     : <harvestcraft:> */
