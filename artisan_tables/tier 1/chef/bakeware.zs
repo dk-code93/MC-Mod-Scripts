@@ -152,21 +152,6 @@ for recipe in copyNoSecondary {
     .create();
 }
 
-/* val copyWithBottle = [
-
-] as string[];
-
-for recipe in copyWithBottle {
-    RecipeBuilder.get("chef")
-     .setCopy(
-        Copy.byName(recipe)
-        .replaceInput(<harvestcraft:bakewareitem>, null)
-    )
-    .setSecondaryIngredients([<minecraft:glass_bottle>])
-    .addTool(<harvestcraft:bakewareitem>, 0)
-    .create();
-} */
-
 val copyWithBowl = [
     /* pies */
     "harvestcraft:applepieitem",
