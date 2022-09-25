@@ -19,6 +19,9 @@ val furnaceToCreate = {
 for key, value in furnaceToCreate {
     furnace.addRecipe(key, value, 2);
 }
-    
-    /* <harvestcraft:ricecakeitem>: <harvestcraft:riceitem>,
-    <harvestcraft:raisinsitem>: <harvestcraft:> */
+
+furnace.addRecipe(<harvestcraft:ricecakeitem>, <ore:cropRice>);
+furnace.addRecipe(<harvestcraft:raisinsitem>, <ore:cropGrape>);
+
+    /* : <harvestcraft:riceitem>,
+    : <harvestcraft:> */

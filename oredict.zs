@@ -4,6 +4,10 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+#adding bop rice
+val rice = <ore:cropRice>;
+rice.add(<biomesoplenty:plant_1:3>);
+
 #coarse dirt
 val dirts = [
     <minecraft:dirt:1>,
