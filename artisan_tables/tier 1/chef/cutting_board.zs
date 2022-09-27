@@ -155,7 +155,7 @@ for key, value in copyNoSecondary {
             Copy.byName(key)
             .replaceInput(<harvestcraft:cuttingboarditem>, null)
         )
-        .addTool(<ore:artisansCuttingBoard>, value)
+        .addTool(<ore:artisansCuttingBoard>, null)
         .create();
 }
 
@@ -181,10 +181,10 @@ for key, value in copyWithBowl {
     RecipeBuilder.get("chef")
      .setCopy(
         Copy.byName(key)
-        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+        .replaceInput(<harvestcraft:cuttingboarditem>, null)
     )
     .setSecondaryIngredients([<minecraft:bowl>])
-    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .addTool(<ore:artisansCuttingBoard>, value)
     .create();
 }
 
@@ -199,10 +199,10 @@ for key, value in copyWithPlate {
     RecipeBuilder.get("chef")
      .setCopy(
         Copy.byName(key)
-        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+        .replaceInput(<harvestcraft:cuttingboarditem>, null)
     )
     .setSecondaryIngredients([<placeableitems:item_plate>])
-    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .addTool(<ore:artisansCuttingBoard>, value)
     .create();
 }
 
@@ -215,9 +215,9 @@ for key, value in copyWithBottle {
     RecipeBuilder.get("chef")
      .setCopy(
         Copy.byName(key)
-        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+        .replaceInput(<harvestcraft:cuttingboarditem>, null)
     )
     .setSecondaryIngredients([<minecraft:glass_bottle>])
-    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .addTool(<ore:artisansCuttingBoard>, value)
     .create();
 }
