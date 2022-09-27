@@ -155,7 +155,7 @@ for key, value in copyNoSecondary {
             Copy.byName(key)
             .replaceInput(<harvestcraft:cuttingboarditem>, null)
         )
-        .addTool(<ore:artisansCuttingBoard>, null)
+        .addTool(<ore:artisansCuttingBoard>, value)
         .create();
 }
 
