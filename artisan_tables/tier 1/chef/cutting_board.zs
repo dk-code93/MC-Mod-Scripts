@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
-val copyWithCuttingBoard = {
+val copyNoSecondary = {
     /* pb & j */
     "harvestcraft:applejellysandwichitem": 3,
     "harvestcraft:blackberryjellysandwichitem": 3,
@@ -67,18 +67,7 @@ val copyWithCuttingBoard = {
     "harvestcraft:porklettucewrapitem": 3,
     "harvestcraft:fishlettucewrapitem": 3,
     /* salads */
-    "harvestcraft:potatosaladitem": 3,
-    "harvestcraft:eggsaladitem": 3,
-    "harvestcraft:fruitsaladitem": 3,
-    "harvestcraft:springsaladitem": 3,
     "harvestcraft:cucumbersaladitem": 3,
-    "harvestcraft:sunflowerbroccolisaladitem": 3,
-    "harvestcraft:mixedsaladitem": 3,
-    "harvestcraft:citrussaladitem": 3,
-    "harvestcraft:tunasaladitem": 3,
-    "harvestcraft:berryvinaigrettesaladitem": 3,
-    "harvestcraft:nopalessaladitem_cactusfruit": 3,
-    "harvestcraft:nopalessaladitem_cactus": 3,
     /* raw tofu */
     "harvestcraft:rawtofuttonitem": 3,
     "harvestcraft:rawtofurkeyitem": 3,
@@ -121,8 +110,6 @@ val copyWithCuttingBoard = {
     "harvestcraft:chipsanddipitem": 3,
     "harvestcraft:crackersandcheeseitem": 3,
     "harvestcraft:hummusitem": 3,
-    "harvestcraft:nachoesitem": 3,
-    "harvestcraft:tortillachipsitem": 3,
     "harvestcraft:theatreboxitem": 3,
     "harvestcraft:pepperjellyandcrackersitem": 3,
     /* meals */
@@ -134,12 +121,9 @@ val copyWithCuttingBoard = {
     "harvestcraft:friedfeastitem": 3,
     "harvestcraft:mashedpotatoeschickenbiscuititem": 3,
     "harvestcraft:sundayhighteaitem": 3,
-    "harvestcraft:surfandturfitem": 3,
     "harvestcraft:weekendpicnicitem": 4,
     "harvestcraft:southernstylebreakfastitem": 4,
-    "harvestcraft:ploughmanslunchitem": 4,
     "harvestcraft:deluxechickencurryitem": 4,
-    "harvestcraft:chickendinneritem": 4,
     "harvestcraft:spaghettidinneritem": 4,
     "harvestcraft:thankfuldinneritem": 4,
     "harvestcraft:koreandinneritem": 4,
@@ -151,7 +135,6 @@ val copyWithCuttingBoard = {
     "harvestcraft:honeybreaditem_drophoney": 3,
     "harvestcraft:honeybreaditem_foodhoneydrop": 3,
     "harvestcraft:fruitcreamfestivalbreaditem": 3,
-    "harvestcraft:etonmessitem": 3,
     "harvestcraft:applesnowitem": 3,
     "harvestcraft:saltedcaramelitem_dustsalt": 3,
     /* misc */
@@ -166,7 +149,7 @@ val copyWithCuttingBoard = {
     "harvestcraft:steaktartaritem": 3,
 } as int[string];
 
-for key, value in copyWithCuttingBoard {
+for key, value in copyNoSecondary {
     RecipeBuilder.get("chef")
          .setCopy(
             Copy.byName(key)
@@ -174,4 +157,67 @@ for key, value in copyWithCuttingBoard {
         )
         .addTool(<ore:artisansCuttingBoard>, value)
         .create();
+}
+
+val copyWithBowl = {
+    /* snacks */
+    "harvestcraft:nachoesitem": 3,
+    /* salads */
+    "harvestcraft:berryvinaigrettesaladitem": 3,
+    "harvestcraft:springsaladitem": 3,
+    "harvestcraft:mixedsaladitem": 3,
+    "harvestcraft:citrussaladitem": 3,
+    "harvestcraft:potatosaladitem": 3,
+    "harvestcraft:sunflowerbroccolisaladitem": 3,
+    "harvestcraft:fruitsaladitem": 3,
+    "harvestcraft:nopalessaladitem_cactusfruit": 3,
+    "harvestcraft:nopalessaladitem_cactus": 3,
+    "harvestcraft:tunasaladitem": 3,
+    "harvestcraft:eggsaladitem": 3,
+    "harvestcraft:tortillachipsitem": 3,
+} as int[string];
+
+for key, value in copyWithBowl {
+    RecipeBuilder.get("chef")
+     .setCopy(
+        Copy.byName(key)
+        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+    )
+    .setSecondaryIngredients([<minecraft:bowl>])
+    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .create();
+}
+
+val copyWithPlate = {
+    /* meats */
+    "harvestcraft:ploughmanslunchitem": 4,
+    "harvestcraft:surfandturfitem": 3,
+    "harvestcraft:chickendinneritem": 4,
+} as int[string];
+
+for key, value in copyWithPlate {
+    RecipeBuilder.get("chef")
+     .setCopy(
+        Copy.byName(key)
+        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+    )
+    .setSecondaryIngredients([<placeableitems:item_plate>])
+    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .create();
+}
+
+val copyWithBottle = [
+    /* desserts */
+    "harvestcraft:etonmessitem": 3,
+] as string[];
+
+for key, value in copyWithBottle {
+    RecipeBuilder.get("chef")
+     .setCopy(
+        Copy.byName(key)
+        .replaceInput(<harvestcraft:cuttingboarditem>, value)
+    )
+    .setSecondaryIngredients([<minecraft:glass_bottle>])
+    .addTool(<harvestcraft:cuttingboarditem>, 0)
+    .create();
 }
