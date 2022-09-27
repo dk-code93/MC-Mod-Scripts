@@ -206,10 +206,10 @@ for key, value in copyWithPlate {
     .create();
 }
 
-val copyWithBottle = [
+val copyWithBottle = {
     /* desserts */
     "harvestcraft:etonmessitem": 3,
-] as string[];
+ } as int[string];
 
 for key, value in copyWithBottle {
     RecipeBuilder.get("chef")
