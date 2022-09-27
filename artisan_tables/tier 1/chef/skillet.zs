@@ -12,6 +12,7 @@ val copyNoSecondary = {
     "harvestcraft:cornbreaditem": 5,
     "harvestcraft:naanitem": 3,
     /* breakfast */
+    "harvestcraft:friedeggitem": 3,
     "harvestcraft:asparagusquicheitem": 5,
     "harvestcraft:baconandeggsitem": 5,
     "harvestcraft:baconpancakesitem": 5,
