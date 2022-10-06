@@ -4,43 +4,83 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
-val copyMixingBowl = {
+val copyNoSecondary = {
     /* desserts */
-    "harvestcraft:vanillaicecreamitem": 0,
-    "harvestcraft:strawberryicecreamitem": 0,
-    "harvestcraft:pistachioicecreamitem": 0,
-    "harvestcraft:mochaicecreamitem": 0,
-    "harvestcraft:cherryicecreamitem": 0,
-    "harvestcraft:mochidessertitem": 0,
-    "harvestcraft:mintchocolatechipicecreamitem": 0,
-    "harvestcraft:chocolateicecreamitem": 0,
-    "harvestcraft:caramelicecreamitem": 0,
-    "harvestcraft:icecreamitem_itemsalt": 1,
-    "harvestcraft:meringueitem": 0,
-    "harvestcraft:cottoncandyitem": 0,
-    "harvestcraft:chocolateorangeitem": 0,
-    "harvestcraft:chilichocolateitem": 0,
-    "harvestcraft:berrymeringuenestitem": 0,
-    "harvestcraft:bananasplititem": 0,
+    "harvestcraft:vanillaicecreamitem": 5,
+    "harvestcraft:strawberryicecreamitem": 5,
+    "harvestcraft:pistachioicecreamitem": 5,
+    "harvestcraft:mochaicecreamitem": 5,
+    "harvestcraft:cherryicecreamitem": 5,
+    "harvestcraft:mochidessertitem": 5,
+    "harvestcraft:mintchocolatechipicecreamitem": 5,
+    "harvestcraft:chocolateicecreamitem": 5,
+    "harvestcraft:caramelicecreamitem": 5,
+    "harvestcraft:meringueitem": 5,
+    "harvestcraft:cottoncandyitem": 5,
+    "harvestcraft:chocolateorangeitem": 5,
+    "harvestcraft:chilichocolateitem": 5,
+    "harvestcraft:berrymeringuenestitem": 5,
+    "harvestcraft:bananasplititem": 5,
     /* snacks */
-    "harvestcraft:bbqpotatochipsitem": 0,
-    "harvestcraft:broccolindipitem": 0,
-    "harvestcraft:chipsandsalsaitem": 0,
-    "harvestcraft:deluxenachoesitem_foodtortillachips_foodsalsa": 0,
-    "harvestcraft:deluxenachoesitem_foodchipsandsalsa": 0,
-    "harvestcraft:poutineitem": 0,
-    "harvestcraft:cheddarandsourcreampotatochipsitem": 0,
-    "harvestcraft:sourcreamandonionpotatochipsitem": 0,
-    "harvestcraft:springrollitem": 0,
-    "harvestcraft:slimegummiesitem": 0,
+    "harvestcraft:bbqpotatochipsitem": 5,
+    "harvestcraft:broccolindipitem": 5,
+    "harvestcraft:chipsandsalsaitem": 5,
+    "harvestcraft:deluxenachoesitem_foodtortillachips_foodsalsa": 5,
+    "harvestcraft:deluxenachoesitem_foodchipsandsalsa": 5,
+    "harvestcraft:poutineitem": 5,
+    "harvestcraft:cheddarandsourcreampotatochipsitem": 5,
+    "harvestcraft:sourcreamandonionpotatochipsitem": 5,
+    "harvestcraft:springrollitem": 5,
+    "harvestcraft:slimegummiesitem": 5,
     /* breakfast */
+    "harvestcraft:cinnamonappleoatmealitem": 5,
+    "harvestcraft:peachesandcreamoatmealitem": 5,
+    "harvestcraft:mapleoatmealitem": 5,
+    /* drinks */
+    "harvestcraft:cherryslushieitem": 5,
+    "harvestcraft:ironbrewitem": 5,
+    "harvestcraft:shrimpcocktailitem": 5,
+    "harvestcraft:seedenergygelitem": 5,
+    "harvestcraft:rootbeerfloatitem": 5,
+    "harvestcraft:raspberrymilkshakeitem": 5,
+    /* meals */
+    "harvestcraft:spagettiandmeatballsitem": 5,
+    /* pasta */
+    "harvestcraft:pastaitem_x5": 5,
+    /* meats */
+    "harvestcraft:creeperwingsitem": 5,
+    "harvestcraft:gourmetvenisonpattyitem_itemsalt": 5,
+    "harvestcraft:gourmetporkpattyitem_itemsalt": 5,
+    "harvestcraft:gourmetmuttonpattyitem_itemsalt": 5,
+    "harvestcraft:gourmetbeffpattyitem_itemsalt": 5,
+    "harvestcraft:hotwingsitem": 5,
+    "harvestcraft:pinkelitem": 5,
+    "harvestcraft:netherwingsitem": 5,
+    /* ingredients */
+    "harvestcraft:batteritem": 5,
+    "harvestcraft:doughitem_itemsalt": 5,
+    "harvestcraft:mashedpotatoesitem_itemsalt": 5,
+    /* misc */
+    "harvestcraft:deviledeggitem": 5,
+    "harvestcraft:manjuuitem": 5,
+    "harvestcraft:onigiriitem": 5,
+} as int[string];
+
+for key, value in copyNoSecondary {
+    RecipeBuilder.get("chef")
+     .setCopy(
+        Copy.byName(key)
+        .replaceInput(<harvestcraft:mixingbowlitem>, null)
+    )
+    .addTool(<harvestcraft:mixingbowlitem>, value)
+    .create();
+}
+
+val copyWithBowl = {
+    "harvestcraft:icecreamitem_itemsalt": 1,
     "harvestcraft:chocovoxelsitem": 1,
     "harvestcraft:cornflakesitem": 1,
     "harvestcraft:crispyricepuffcerealitem": 1,
-    "harvestcraft:cinnamonappleoatmealitem": 0,
-    "harvestcraft:peachesandcreamoatmealitem": 0,
-    "harvestcraft:mapleoatmealitem": 0,
-    /* salads */
     "harvestcraft:coleslawitem": 1,
     "harvestcraft:peasandceleryitem": 1,
     "harvestcraft:beetsaladitem": 1,
@@ -50,58 +90,20 @@ val copyMixingBowl = {
     "harvestcraft:fiestacornsaladitem": 1,
     "harvestcraft:threebeansaladitem": 1,
     "harvestcraft:crayfishsaladitem": 1,
-    /* drinks */
-    "harvestcraft:cherryslushieitem": 0,
-    "harvestcraft:ironbrewitem": 0,
-    "harvestcraft:shrimpcocktailitem": 0,
-    "harvestcraft:seedenergygelitem": 0,
-    "harvestcraft:rootbeerfloatitem": 0,
-    "harvestcraft:raspberrymilkshakeitem": 0,
-    /* meals */
-    "harvestcraft:spagettiandmeatballsitem": 0,
     "harvestcraft:akutuqitem": 1,
-    /* pasta */
-    "harvestcraft:pastaitem_x5": 0,
     "harvestcraft:pastagardeniaitem": 1,
-    /* meats */
-    "harvestcraft:creeperwingsitem": 0,
-    "harvestcraft:gourmetvenisonpattyitem_itemsalt": 0,
-    "harvestcraft:gourmetporkpattyitem_itemsalt": 0,
-    "harvestcraft:gourmetmuttonpattyitem_itemsalt": 0,
-    "harvestcraft:gourmetbeffpattyitem_itemsalt": 0,
-    "harvestcraft:hotwingsitem": 0,
-    "harvestcraft:pinkelitem": 0,
-    "harvestcraft:netherwingsitem": 0,
-    /* ingredients */
-    "harvestcraft:batteritem": 0,
-    "harvestcraft:doughitem_itemsalt": 0,
     "harvestcraft:heavycreamitem": 1,
-    "harvestcraft:mashedpotatoesitem_itemsalt": 0,
     "harvestcraft:salsaitem": 1,
-    /* misc */
-    "harvestcraft:deviledeggitem": 0,
-    "harvestcraft:manjuuitem": 0,
     "harvestcraft:museliitem": 1,
-    "harvestcraft:onigiriitem": 0,
 } as int[string];
 
-for key, value in copyMixingBowl {
-    if (value == 1) {
-        RecipeBuilder.get("chef")
-         .setCopy(
-            Copy.byName(key)
-            .replaceInput(<harvestcraft:mixingbowlitem>, null)
-        )
-        .setSecondaryIngredients([<minecraft:bowl>])
-        .addTool(<harvestcraft:mixingbowlitem>, 0)
-        .create();
-    } else {
-        RecipeBuilder.get("chef")
-         .setCopy(
-            Copy.byName(key)
-            .replaceInput(<harvestcraft:mixingbowlitem>, null)
-        )
-        .addTool(<harvestcraft:mixingbowlitem>, 0)
-        .create();
-    }
+for key, value in copyWithBowl {
+    RecipeBuilder.get("chef")
+     .setCopy(
+        Copy.byName(key)
+        .replaceInput(<harvestcraft:mixingbowlitem>, null)
+    )
+    .setSecondaryIngredients([<minecraft:bowl>])
+    .addTool(<harvestcraft:mixingbowlitem>, value)
+    .create();
 }
