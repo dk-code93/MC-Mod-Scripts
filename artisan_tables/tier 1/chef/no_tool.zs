@@ -68,3 +68,47 @@ RecipeBuilder.get("chef")
   .setName("placable_plate")
   .create();
 
+/* Pams Cooking Tools */
+RecipeBuilder.get("chef")
+   .setCopy(
+      Copy.byName("harvestcraft:tool_cuttingboarditem")
+  )
+  .addTool(<ore:artisansHandsaw>, 20)
+  .create();
+
+RecipeBuilder.get("chef")
+   .setCopy(
+      Copy.byName("harvestcraft:tool_juiceritem")
+  )
+  .addTool(<ore:artisansSolderer>, 20)
+  .create();
+
+val cookingToolsHammer = [
+  "harvestcraft:tool_potitem",
+  "harvestcraft:tool_skilletitem",
+  "harvestcraft:tool_saucepanitem",
+  "harvestcraft:tool_bakewareitem",
+] as string[];
+
+for recipe in cookingToolsHammer {
+  RecipeBuilder.get("chef")
+         .setCopy(
+            Copy.byName(recipe)
+        )
+        .addTool(<ore:artisansHammer>, 20)
+        .create();
+}
+
+val cookingToolsCarver = [
+  "harvestcraft:tool_mortarandpestleitem",
+  "harvestcraft:tool_mixingbowlitem",
+] as string[];
+
+for recipe in cookingToolsCarver {
+  RecipeBuilder.get("chef")
+         .setCopy(
+            Copy.byName(recipe)
+        )
+        .addTool(<ore:artisansCarver>, 20)
+        .create();
+}
