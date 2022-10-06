@@ -47,7 +47,6 @@ val copyMixingBowl = {
     "harvestcraft:summerradishsaladitem": 1,
     "harvestcraft:ceasarsaladitem": 1,
     "harvestcraft:dandelionsaladitem": 1,
-    "harvestcraft:glisteningsaladitem": 1,
     "harvestcraft:fiestacornsaladitem": 1,
     "harvestcraft:threebeansaladitem": 1,
     "harvestcraft:crayfishsaladitem": 1,
