@@ -6,6 +6,8 @@ import crafttweaker.oredict.IOreDict;
 
 val copyNoTool = [
     "mysticalworld:book",
+    "roots:guide",
+    "mysticalworld:guide",
     "ancientbeasts:bestiarium",
     "animania:animania_manual",
 ] as string[];
