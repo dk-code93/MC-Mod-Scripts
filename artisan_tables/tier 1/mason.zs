@@ -4,6 +4,27 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
+val copyNoTool = [
+    "quark:world_stone_carved",
+    "quark:world_stone_carved_1",
+    "quark:world_stone_carved_2",
+    "quark:world_stone_carved_3",
+    "quark:world_stone_carved_4",
+    "quark:world_stone_carved_5",
+    "quark:world_stone_carved_6",
+    "quark:world_stone_carved_7",
+    "quark:world_stone_carved_8",
+    "quark:world_stone_carved_9",
+] = string[]
+
+for recipe in copyNoTool {
+    RecipeBuilder.get("mason")
+         .setCopy(
+            Copy.byName(key)
+        )
+        .create();
+}
+
 val copyWithSaw = {
     /* slabs */
     "minecraft:stone_slab": 8,
