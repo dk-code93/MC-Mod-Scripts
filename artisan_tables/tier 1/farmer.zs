@@ -57,6 +57,8 @@ val copyWithSolderer = {
     "animania:block_hamster_wheel": 20,
     "animania:item_tiller": 25,
     "animania:riding_crop": 20,
+    /* survival */
+    "simpledifficulty:rain_collector": 30,
 } as int[string];
 
 for key, value in copyWithSolderer {
