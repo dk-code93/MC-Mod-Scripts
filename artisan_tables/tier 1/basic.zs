@@ -14,6 +14,8 @@ val recipesToCopy = [
     "minecraft:leather_chestplate",
     "minecraft:leather_leggings",
     "minecraft:leather_boots",
+    "minecraft:book",
+    "mysticalworld:book",
     /* basic tools */
     "futuremc:else/campfire",
     "notreepunching:tools/flint_pickaxe",
