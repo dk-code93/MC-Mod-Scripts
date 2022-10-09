@@ -20,7 +20,7 @@ val copyNoTool = [
 for recipe in copyNoTool {
     RecipeBuilder.get("mason")
          .setCopy(
-            Copy.byName(key)
+            Copy.byName(recipe)
         )
         .create();
 }
