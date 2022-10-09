@@ -15,7 +15,7 @@ val copyNoTool = [
     "quark:world_stone_carved_7",
     "quark:world_stone_carved_8",
     "quark:world_stone_carved_9",
-] = string[]
+] as string[]
 
 for recipe in copyNoTool {
     RecipeBuilder.get("mason")
