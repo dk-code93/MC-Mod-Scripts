@@ -36,6 +36,7 @@ val copyNoTool = [
     "minecraft:black_stained_glass_pane",
     "quark:framed_glass",
     "quark:framed_glass_pane",
+    "mysticalagriculture:soul_glass_pane",
 ] as string[];
 
 for recipe in copyNoTool {
