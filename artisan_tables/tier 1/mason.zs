@@ -5,6 +5,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 
 val copyNoTool = [
+    /* stone */
     "quark:world_stone_carved",
     "quark:world_stone_carved_1",
     "quark:world_stone_carved_2",
@@ -15,6 +16,26 @@ val copyNoTool = [
     "quark:world_stone_carved_7",
     "quark:world_stone_carved_8",
     "quark:world_stone_carved_9",
+    /* glass */
+    "minecraft:glass_pane",
+    "minecraft:white_stained_glass_pane",
+    "minecraft:orange_stained_glass_pane",
+    "minecraft:magenta_stained_glass_pane",
+    "minecraft:cyan_stained_glass_pane",
+    "minecraft:yellow_stained_glass_pane",
+    "minecraft:lime_stained_glass_pane",
+    "minecraft:pink_stained_glass_pane",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:light_blue_stained_glass_pane",
+    "minecraft:purple_stained_glass_pane",
+    "minecraft:blue_stained_glass_pane",
+    "minecraft:brown_stained_glass_pane",
+    "minecraft:green_stained_glass_pane",
+    "minecraft:red_stained_glass_pane",
+    "minecraft:black_stained_glass_pane",
+    "quark:framed_glass",
+    "quark:framed_glass_pane",
 ] as string[];
 
 for recipe in copyNoTool {
