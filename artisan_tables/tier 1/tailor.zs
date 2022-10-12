@@ -121,6 +121,23 @@ val copyNoTool = [
     "harvestcraft:candledeco14",
     "harvestcraft:candledeco15",
     "harvestcraft:candledeco16",
+    /* glass */
+    "minecraft:white_stained_glass",
+    "minecraft:orange_stained_glass",
+    "minecraft:magenta_stained_glass",
+    "minecraft:cyan_stained_glass",
+    "minecraft:yellow_stained_glass",
+    "minecraft:lime_stained_glass",
+    "minecraft:pink_stained_glass",
+    "minecraft:gray_stained_glass",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:light_blue_stained_glass",
+    "minecraft:purple_stained_glass",
+    "minecraft:blue_stained_glass",
+    "minecraft:brown_stained_glass",
+    "minecraft:green_stained_glass",
+    "minecraft:red_stained_glass",
+    "minecraft:black_stained_glass",
 ] as string[];
 
 for recipe in copyNoTool {
